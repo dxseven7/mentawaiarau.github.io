@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-6/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Mentawai</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="logo">
+        <a href="index.html"><img src="img/gambar.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#A">ABOUT</a></li>
+            <li><a href="#B">GALERY</a></li>
+            <li><a href="#C">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1><span class="auto-type">This Is Mentawai</span></h1>
+        <a href="#" class="hero-btn">Ikuti Kami</a>
+      </div>
+    </section>
+
+    <!---about-->
+
+    <section id="A" class="about">
+      <h1>ABOUT</h1>
+
+      <div class="row">
+        <div class="about-col">
+          <h3>Sejarah</h3>
+          <p align="justify">
+            Kabupaten Kepulauan Mentawai dibentuk berdasarkan UU RI No. 49 Tahun
+            1999 dan dinamai menurut nama asli geografisnya. Kabupaten ini
+            terdiri dari 4 kelompok pulau utama yang berpenghuni yaitu Pulau
+            Siberut, Pulau Sipora, Pulau Pagai Utara dan Pulau Pagai Selatan
+            yang dihuni oleh mayoritas masyarakat suku Mentawai. Kepulauan
+            Mentawai merupakan bagian dari serangkaian pulau non-vulkanik dan
+            gugus kepulauan itu merupakan puncak-puncak dari suatu punggung
+            pegunungan bawah laut. Disamping itu, Kantor Kementerian Agama
+            Kabupaten yang terletak di KM.12 Tuapeijat yang merupakan ibu kota
+            kabupaten Kepulauan Mentawai ini diresmikan pada tahun 2005
+          </p>
+        </div>
+        <div class="about-col">
+          <h3>Keunikan</h3>
+          <p align="justify">
+            Sikerei adalah ahli pengobatan dan dukun yang menghubungkan warga
+            dengan roh. Sikerei menjadi tokoh penting di sebuah uma. Dia punya
+            keterampilan mengobati berbagai jenis penyakit dengan ramuan dari
+            tanaman obat. Dalam pengobatan, Sikerei sering melakukantarian
+            ritual yang merupakan tahap akhir dalam pengobatan. Roh si sakit
+            dihibur dengan tarian dan sesajian agar tidak meninggalkan tubuhnya.
+            Sebab jika jiwa telah meninggalkan tubuh berarti orang tersebut bisa
+            meninggal dunia. Ritual sikerei dilakukan di dalam uma.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="B" class="galery">
+      <h1>GALERY</h1>
+      <div class="row">
+        <div class="galery-col">
+          <img src="img/mentawai2.jpg" alt="mentawai2" />
+        </div>
+        <div class="galery-col">
+          <img src="img/mentawai.jpg" alt="mentawai3" />
+        </div>
+        <div class="galery-col">
+          <img src="img/WhatsApp-Image-2022-02-10-at-15.52.46.jpeg" alt="" />
+        </div>
+        <div class="galery-col">
+          <img src="img/berburu.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="C" class="contact-col">
+      <div class="container">
+        <h1>CONTACT</h1>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <input type="text" id="nama" placeholder="Nama Kamu" required />
+          <input type="text" id="email" placeholder="Email Kamu" required />
+          <textarea
+            id="mesagge"
+            cols="4"
+            placeholder="Bagaimana kami membatu anda?"
+          ></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <footer class="pembuat">
+      <p>
+        Created by
+        <a href="https://www.instagram.com/arau27_/?hl=id">Arau Sababalat</a>
+      </p>
+    </footer>
+    <i class="fa-brands fa-instagram-square"></i>
+
+    <!-------JavaScript untuk menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {}
+    </script>
+  </body>
+</html>
