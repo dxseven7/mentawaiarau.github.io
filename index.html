@@ -45,7 +45,6 @@
 
     <section id="A" class="about">
       <h1>ABOUT</h1>
-
       <div class="row">
         <div class="about-col">
           <h3>Sejarah</h3>
@@ -94,15 +93,50 @@
         </div>
       </div>
     </section>
+    <section id="C" class="contact">
+      <h1>CONTACT</h1>
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Nama Kamu.."
+          />
 
-    <footer class="pembuat">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            id="femail"
+            name="email"
+            placeholder="Email Kamu"
+          />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Tulis disini.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <footer class="created">
       <p>
         Created by
-        <a href="https://www.instagram.com/arau27_/?hl=id">Arau Sababalat</a>
+        <a href=""
+          >Arau Sababalat
+          <i
+            class="fa-brands fa-instagram-square"
+            href="https://www.instagram.com/arau27_/?hl=id"
+          ></i>
+        </a>
       </p>
     </footer>
-    <i class="fa-brands fa-instagram-square"></i>
-
     <!-------JavaScript untuk menu----->
     <script>
       var navLinks = document.getElementById("navLinks");
